@@ -6,4 +6,129 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="289dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="398dp"
+            android:layout_height="181dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="372dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Could Not connect to customer"
+                android:textAlignment="viewStart"
+                android:textColor="#090404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                app:icon="@android:drawable/ic_menu_always_landscape_portrait"
+                app:iconGravity="end"
+                app:iconSize="60dp"
+                app:iconTint="#756767"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="372dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="#FF9800"
+                android:text="Please Contact the support team  and let them know the Customers unavailability to get the return task for this order"
+                android:textAlignment="center"
+                android:textColor="#090404"
+                android:textSize="12sp"
+                app:cornerRadius="8dp"
+                app:icon="@android:drawable/ic_dialog_alert"
+                app:iconGravity="start"
+                app:iconSize="40dp"
+                app:iconTint="#756767"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="292dp"
+            android:layout_marginTop="44dp"
+            android:text="98PSV2"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="52dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#FFFFFF"
+            app:icon="?attr/actionModeCloseDrawable"
+            app:iconTint="#000000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="415dp"
+        android:layout_height="206dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="525dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="332dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#06F3A7"
+            android:text="REquest a Call back"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:icon="@android:drawable/stat_sys_phone_call"
+            app:iconGravity="textStart"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="332dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="116dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="I found the Customer"
+            android:textColor="#90EE90"
+            android:textColorHint="#B83939"
+            android:textColorLink="#DA2020"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

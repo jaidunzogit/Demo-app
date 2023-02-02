@@ -4,12 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-
+import androidx.fragment.app.add
+import androidx.fragment.app.commit
 
 
 class MainActivity : AppCompatActivity() {
 
-    val msg:String = "MAIN ACTIVITY :"
+    val msg:String = "Track :"
 
     override fun onStart() {
         super.onStart()
@@ -26,6 +27,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d(msg,"The onCreate() event")
+
+
+        if (savedInstanceState == null) {
+            supportFragmentManager.commit {
+                setReorderingAllowed(true)
+                add<Fragment1>(R.id.fragment1)
+            }
+        }
+
+
         val intent = Intent(this,MainActivity2::class.java)
         startActivity(intent)
     }

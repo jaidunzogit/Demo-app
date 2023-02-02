@@ -6,7 +6,7 @@ import android.util.Log
 
 class MainActivity2 : AppCompatActivity() {
 
-    val msg:String = "MAIN Activity 2 :"
+    val msg:String = "Track :"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

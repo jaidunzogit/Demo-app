@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 class Fragment1: Fragment() {
 
 
-    val msg = "Fragment1 :"
+    val msg = "Track :"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
