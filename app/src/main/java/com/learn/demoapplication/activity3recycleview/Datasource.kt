@@ -1,7 +1,8 @@
-package com.learn.demoapplication
+package com.learn.demoapplication.activity3recycleview
 
 import android.content.Context
 import android.util.Log
+import com.learn.demoapplication.R
 
 class Datasource (val context:Context){
     val msg = "Track :"

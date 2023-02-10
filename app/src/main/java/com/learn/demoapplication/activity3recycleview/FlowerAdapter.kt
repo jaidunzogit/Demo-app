@@ -1,4 +1,4 @@
-package com.learn.demoapplication
+package com.learn.demoapplication.activity3recycleview
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.learn.demoapplication.R
 
 class FlowerAdapter(val flowerList:Array<String>) : RecyclerView.Adapter<FlowerAdapter.FlowerViewHolder>() {
 

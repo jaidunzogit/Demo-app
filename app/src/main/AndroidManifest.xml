@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,9 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoApplication"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity3"
-            android:exported="true" >
+            android:name=".MainActivity5"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,20 +24,35 @@
             </intent-filter>
         </activity>
 
+
+        <!-- Main activity used for implememtation of fragment and directly create activity 2 which direct goes for UI -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+
+        <!-- Activity 2 UI implemented but invoke MAIN activity -->
         <activity
             android:name=".MainActivity2"
             android:exported="false" />
 
+
+        <!-- Activity 3 used for implemetation for recycle view using hardcode data in strings.xml -->
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity3"
             android:exported="false"/>
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>           -->
+<!--            </intent-filter>-->
 <!--        </activity>-->
 
+
+        <!-- ACtivity 4     IMplemented the coroutines just for sake of learning , Can see input in run tab -->
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false" />
     </application>
 
 </manifest>

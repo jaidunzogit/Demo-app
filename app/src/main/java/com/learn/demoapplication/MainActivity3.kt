@@ -1,10 +1,11 @@
 package com.learn.demoapplication
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
+import com.learn.demoapplication.activity3recycleview.Datasource
+import com.learn.demoapplication.activity3recycleview.FlowerAdapter
 
 class MainActivity3 : AppCompatActivity() {
 
